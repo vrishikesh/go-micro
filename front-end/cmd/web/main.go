@@ -12,9 +12,9 @@ func main() {
 		render(w, "test.page.gohtml")
 	})
 
-	const port = "3001"
+	const port = 3001
 	log.Printf("Starting front end service on port %s\n", port)
-	err := http.ListenAndServe(fmt.Sprintf(":%s", port), nil)
+	err := http.ListenAndServe(fmt.Sprintf(":%v", port), nil)
 	if err != nil {
 		log.Panic(err)
 	}
