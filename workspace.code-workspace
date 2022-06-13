@@ -15,5 +15,8 @@
 		{
 			"path": "logger-service"
 		}
-	]
+	],
+	"settings": {
+		"makefile.extensionOutputFolder": "./.vscode"
+	}
 }
